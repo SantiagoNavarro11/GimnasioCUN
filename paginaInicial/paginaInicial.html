@@ -1,2 +1,88 @@
-<p>HolaMundo</p>
-<h2>CREEN CADA UNO SU VISTA Y PONGANLO BIEN</h2>
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Spartan Studio - Bienvenido</title>
+    <link rel="stylesheet" href="paginaInicial.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="overlay">
+      <header class="header-main" role="banner">
+        <h1>Bienvenido a Spartan Studio</h1>
+        <p>Tu fuerza comienza aquí</p>
+      </header>
+
+      <nav
+        class="nav-buttons"
+        role="navigation"
+        aria-label="Navegación principal"
+      >
+        <button
+          type="button"
+          onclick="redirigir('servicios.html')"
+          aria-label="Ir a Servicios"
+        >
+          Servicios
+        </button>
+        <button
+          type="button"
+          onclick="redirigir('planes.html')"
+          aria-label="Ir a Planes"
+        >
+          Planes
+        </button>
+        <button
+          type="button"
+          onclick="redirigir('horarios.html')"
+          aria-label="Ir a Horarios"
+        >
+          Horarios
+        </button>
+        <button
+          type="button"
+          onclick="redirigir('contacto.html')"
+          aria-label="Ir a Contacto"
+        >
+          Contacto
+        </button>
+      </nav>
+
+      <section class="team-section" aria-labelledby="team-title">
+        <h2 id="team-title">Conoce a Nuestro Equipo</h2>
+        <div class="team-container">
+          <article class="team-member">
+            <img
+              src="../Imagenes/ImagenDavid.jpg"
+              alt="David Navarro"
+              loading="lazy"
+            />
+            <h3>David Navarro</h3>
+            <p>Co-fundador y Entrenador Principal</p>
+          </article>
+          <article class="team-member">
+            <img src="imagenes/lina.jpg" alt="Lina Niño" loading="lazy" />
+            <h3>Lina Niño</h3>
+            <p>Co-fundadora y Nutricionista</p>
+          </article>
+          <article class="team-member">
+            <img src="imagenes/damian.jpg" alt="Damian Ojeda" loading="lazy" />
+            <h3>Damian Ojeda</h3>
+            <p>Entrenador de Fuerza y Condición Física</p>
+          </article>
+          <article class="team-member">
+            <img src="imagenes/nicolas.jpg" alt="Nicolas" loading="lazy" />
+            <h3>Nicolas</h3>
+            <p>Especialista en Programas Personalizados</p>
+          </article>
+        </div>
+      </section>
+    </div>
+
+    <script src="paginaInicial.js"></script>
+  </body>
+</html>

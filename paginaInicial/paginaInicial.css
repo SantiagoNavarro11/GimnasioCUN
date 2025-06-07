@@ -1,0 +1,198 @@
+/* Reset CSS */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Variables de color */
+:root {
+  --color-primary: #e91e63;
+  --color-primary-dark: #c2185b;
+  --color-overlay-bg: rgba(0, 0, 0, 0.65);
+  --color-text-light: #fff;
+  --color-text-dark: #222;
+  --font-family: "Poppins", sans-serif;
+  --transition-speed: 0.3s;
+}
+
+/* Body y fondo */
+body {
+  font-family: var(--font-family);
+  background-image: url("../imagenes/ImagenInicio.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  color: var(--color-text-light);
+  overflow-x: hidden;
+}
+
+/* Capa oscura overlay */
+.overlay {
+  background-color: var(--color-overlay-bg);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 3rem 1.5rem;
+  gap: 3rem;
+  box-shadow: inset 0 0 150px rgba(0, 0, 0, 0.8);
+}
+
+/* Encabezado principal */
+.header-main h1 {
+  font-size: clamp(2.5rem, 5vw, 3.5rem);
+  font-weight: 600;
+  margin-bottom: 0.4rem;
+  user-select: none;
+  text-shadow: 0 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+.header-main p {
+  font-size: clamp(1.2rem, 2.5vw, 1.8rem);
+  font-weight: 300;
+  margin-bottom: 2rem;
+  user-select: none;
+  letter-spacing: 1.2px;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.7);
+}
+
+/* Navegación con botones */
+.nav-buttons {
+  display: flex;
+  gap: 1.2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.nav-buttons button {
+  background-color: var(--color-primary);
+  border: none;
+  color: var(--color-text-light);
+  padding: 0.9rem 2.2rem;
+  font-size: 1.1rem;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 0 3px 7px rgba(233, 30, 99, 0.6);
+  transition: background-color var(--transition-speed),
+    box-shadow var(--transition-speed), transform var(--transition-speed);
+  font-weight: 600;
+  user-select: none;
+}
+
+.nav-buttons button:hover,
+.nav-buttons button:focus {
+  background-color: var(--color-primary-dark);
+  box-shadow: 0 6px 15px rgba(194, 24, 91, 0.8);
+  outline: none;
+  transform: translateY(-3px);
+}
+
+/* Sección equipo */
+.team-section {
+  max-width: 960px;
+  width: 100%;
+  color: var(--color-text-light);
+  user-select: none;
+}
+
+.team-section h2 {
+  font-size: clamp(2rem, 4vw, 2.8rem);
+  font-weight: 600;
+  margin-bottom: 2rem;
+  text-shadow: 0 2px 5px rgba(0, 0, 0, 0.6);
+}
+
+/* Contenedor de miembros */
+.team-container {
+  display: flex;
+  justify-content: center;
+  gap: 2.5rem;
+  flex-wrap: wrap;
+}
+
+/* Miembro individual */
+.team-member {
+  background-color: rgba(255 255 255 / 0.1);
+  padding: 1.3rem 1rem 2rem 1rem;
+  border-radius: 15px;
+  width: 190px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.5);
+  transition: transform var(--transition-speed),
+    box-shadow var(--transition-speed);
+}
+
+.team-member:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 25px rgba(233, 30, 99, 0.5);
+  cursor: default;
+}
+
+.team-member img {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1rem;
+  border: 3px solid var(--color-primary);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.team-member h3 {
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-bottom: 0.3rem;
+  color: var(--color-text-light);
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.8);
+}
+
+.team-member p {
+  font-size: 1rem;
+  font-weight: 300;
+  opacity: 0.85;
+  color: var(--color-text-light);
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.7);
+}
+
+/* Responsive */
+@media (max-width: 650px) {
+  .nav-buttons button {
+    padding: 0.8rem 1.6rem;
+    font-size: 1rem;
+  }
+  .team-member {
+    width: 150px;
+    padding: 1rem 0.8rem 1.6rem 0.8rem;
+  }
+  .team-member img {
+    width: 110px;
+    height: 110px;
+  }
+  .team-section h2 {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .nav-buttons {
+    gap: 0.7rem;
+  }
+  .nav-buttons button {
+    padding: 0.7rem 1.2rem;
+    font-size: 0.9rem;
+  }
+  .team-member {
+    width: 130px;
+  }
+  .team-member h3 {
+    font-size: 1.1rem;
+  }
+  .team-member p {
+    font-size: 0.9rem;
+  }
+}
