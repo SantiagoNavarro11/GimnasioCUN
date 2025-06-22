@@ -1,0 +1,118 @@
+/* Fondo con imagen */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: url('imagencontacto.jpg') no-repeat center center fixed;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+}
+
+/* Encabezado */
+header {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 30px 0;
+  text-align: center;
+  font-size: 36px;
+  font-weight: bold;
+}
+
+/* Formulario principal */
+.contacto {
+  max-width: 800px;
+  margin: 30px auto;
+  background-color: rgba(255, 255, 255, 0.95);
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.contacto h2 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.subtitulo {
+  text-align: center;
+  font-size: 15px;
+  margin-bottom: 20px;
+  color: #444;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+input, textarea {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-size: 16px;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+button {
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 15px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #b30000;
+}
+
+/* Datos de contacto */
+.datos-contacto {
+  margin-top: 20px;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+/* Mapa */
+.mapa {
+  margin-top: 30px;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+/* Redes sociales */
+.redes-flotantes {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  z-index: 999;
+}
+
+.redes-flotantes a {
+  background-color: white;
+  color: #000;
+  font-size: 20px;
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  text-decoration: none;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  transition: transform 0.2s ease;
+}
+
+.redes-flotantes a:hover {
+  transform: scale(1.1);
+}
