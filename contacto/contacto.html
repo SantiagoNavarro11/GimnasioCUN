@@ -6,14 +6,47 @@
   <title>Spartan Studio - Contáctanos</title>
   <link rel="stylesheet" href="estilo.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+
+  <style>
+    .menu-retorno {
+      text-align: center;
+      margin-top: 60px;
+      margin-bottom: 40px;
+    }
+
+    .menu-retorno a {
+      display: inline-block;
+      margin: 20px;
+      padding: 12px 35px;
+      background-color: #df0647;
+      color: white;
+      font-weight: bold;
+      border: none;
+      border-radius: 12px;
+      text-decoration: none;
+      font-size: 16px;
+      transition: background-color 0.3s;
+    }
+
+    .menu-retorno a:hover {
+      background-color: #eb0329;
+    }
+  </style>
 </head>
 <body>
+  </div>
 
   <!-- Encabezado -->
   <header>
     Spartan Studio
   </header>
-
+<!-- Menú de retorno al inicio -->
+  <div class="menu-retorno">
+    <a href="index.html">Servicios</a>
+    <a href="planes.html">Planes</a>
+    <a href="horarios.html">Horarios</a>
+    <a href="contacto.html">Contacto</a>
+  </div>
   <!-- Sección de contacto -->
   <section class="contacto">
     <h2>Contáctanos</h2>
@@ -23,7 +56,7 @@
     <form>
       <input type="text" placeholder="Nombre completo" required />
       <input type="email" placeholder="Correo electrónico" required />
-        <input type="tel" placeholder="Número de teléfono" required />
+      <input type="tel" placeholder="Número de teléfono" required />
       <textarea placeholder="Tu mensaje..." required></textarea>
       <button type="submit">Enviar mensaje</button>
     </form>
@@ -55,6 +88,7 @@
 
 </body>
 </html>
+
 
 <!-- Estilos CSS -->
 <style>
