@@ -1,5 +1,99 @@
 /*Grid de despliegue menu Responsive*/
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+
+:root {
+  --black: #0b0b0b;
+  --charcoal: #1a1a1a;
+  --red: #d7263d;
+  --red-dark: #92192a;
+  --white: #f5f5f5;
+  --radius: 14px;
+  --speed: 0.35s;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  }
+  body {
+  font-family: "Poppins", sans-serif;
+  background: var(--black);
+  color: var(--white);
+  line-height: 1.6;
+  scroll-behavior: smooth;
+}
+.container {
+  width: min(1200px, 90%);
+  margin-inline: auto;
+}
+.badge {
+  display: inline-block;
+  padding: 0.25rem 0.6rem;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(10, 10, 10, 0.85);
+  backdrop-filter: blur(6px);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.6);
+  z-index: 1000;
+}
+nav .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 0;
+}
+.logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+.logo span {
+  color: var(--red);
+}
+.menu {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+.menu a {
+  position: relative;
+  text-decoration: none;
+  color: inherit;
+  font-weight: 500;
+  padding-bottom: 0.2rem;
+}
+.menu a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background: var(--red);
+  transition: width var(--speed) ease;
+}
+.menu a:hover::after {
+  width: 100%;
+}
+@media (max-width: 700px) {
+  .menu {
+    gap: 1rem;
+    font-size: 0.9rem;
+  }
+}
 @media (width > 768px) {
   nav {
     position: static;
@@ -106,6 +200,8 @@
   .footer_socials {
     justify-content: flex-end;
   }
+
+
 
 }
 /*Testimonio*/
@@ -327,10 +423,14 @@ body{
 }
 .comodidades .fila .col .contenedor-titulo .info h2{
     font-size: 3rem;
+
+    color: black;
 }
 .comodidades .fila .col p{
    margin-bottom: 10px;
    line-height: 28px;
+
+   color: red
 }
 .comodidades .fila .col .p-especial{
     font-weight: bold;
@@ -415,6 +515,8 @@ body{
 }
 .equipo .contenedor-titulo .info h2{
     font-size: 3rem;
+
+    color: black;
 }
 .equipo .fila{
     margin: 50px 0;
