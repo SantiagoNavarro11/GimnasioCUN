@@ -1,71 +1,128 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Spartan Studio - Contáctanos</title>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Spartan Studio</title>
+    <link rel="stylesheet" href="estilo.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Barra superior -->
+    <header class="navbar">
+      <div class="logo-container">
+        <img src="logo2.jpg" class="logo" alt="Logo Spartan" />
+        <span class="logo-text">
+          <span class="spartan">SPARTAN</span>
+          <span class="studio">STUDIO</span>
+        </span>
+      </div>
 
-  <!-- Estilos externos -->
-  <link rel="stylesheet" href="estilo.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
-<body>
+      <nav class="menu">
+        <a href="../paginaInicial/paginaInicial.html">Inicio</a>
+        <a href="../Planes_Testimonios/planes.html">Planes</a>
+        <a href="../servicios/servicio.html">Servicios</a>
+        <a href="../Planes_Testimonios/planes.html">Testimonios</a>
+        <a href="../contacto/contacto.html">Contacto</a>
 
-  <!-- Menú principal -->
-  <nav class="navbar-main">
-    <div class="logo">SPARTAN STUDIO</div>
-    <ul class="nav-links">
-      <li><a href="index.html">Inicio</a></li>
-      <li><a href="planes.html">Planes</a></li>
-      <li><a href="entrenadores.html">Entrenadores</a></li>
-      <li><a href="horarios.html">Horarios</a></li>
-      <li><a href="contacto.html">Contacto</a></li>
-    </ul>
-  </nav>
+        <!-- aqui deberia de ir las concexiones a los otoros forms -->
+      </nav>
+    </header>
 
-  <!-- Título principal -->
-  <header>
-    <h1>Contáctanos</h1>
-  </header>
+    <!-- Sección de contacto -->
+    <section class="contacto" id="contacto">
+      <div class="formulario">
+        <h2>Contáctanos</h2>
+        <p>
+          ¿Tienes preguntas, sugerencias o quieres unirte a nuestro Gimnacio?
+          Rellena el formulario y nos comunicaremos contigo lo antes posible.
+        </p>
 
-  <!-- Sección de contacto -->
-  <section class="contacto">
+        <form id="formulario-contacto">
+          <input type="text" placeholder="Nombre" required />
+          <input type="email" placeholder="Correo" required />
+          <input type="numero" placeholder="Telefono" required />
+          <textarea placeholder="Mensaje" required></textarea>
+          <button type="submit">Enviar mensaje</button>
+        </form>
 
-    <p class="subtitulo">Déjanos tu mensaje y nos pondremos en contacto contigo.</p>
-    
-    <!-- Formulario -->
-    <form>
-      <input type="text" placeholder="Nombre completo" required />
-      <input type="email" placeholder="Correo electrónico" required />
-      <input type="tel" placeholder="Número de teléfono" required />
-      <textarea placeholder="Tu mensaje..." required></textarea>
-      <button type="submit">Enviar mensaje</button>
-  </section>
+        <!-- mensaje de éxito oculto -->
+        <p
+          id="mensaje-exito"
+          style="
+            display: none;
+            color: #00ff00;
+            font-weight: bold;
+            margin-top: 10px;
+          "
+        >
+          ¡Mensaje enviado con éxito!
+        </p>
 
-  <!-- Información de contacto -->
-  <section class="datos-contacto">
-    <h3>Información de contacto</h3>
-    <p><strong>Dirección:</strong> Calle 123#7-14, Bogotá, Colombia</p>
-    <p><strong>Teléfono:</strong> +57 310 332 5973</p>
-    <p><strong>Email:</strong> contacto@spartanstudio.com</p>
-    <p><strong>Horario de atención:</strong> Lunes a sábado: 6:00 AM – 9:00 PM</p>
-  </section>
+        <div class="info-contacto">
+          <p><strong>Dirección:</strong> Calle 123#7–14, Bogotá, Colombia</p>
+          <p><strong>Teléfono:</strong> +57 310 332 5973</p>
+          <p><strong>Email:</strong> contacto@spartanestudio.com</p>
+          <p>
+            <strong>Horario de Atencion:</strong> De Lunes a Viernes: 8:00 AM –
+            5:00 PM
+          </p>
+        </div>
+      </div>
 
-  <!-- Mapa -->
-  <section class="mapa">
-    <iframe 
-      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.9795825026143!2d-74.08175368467664!3d4.609710143799985!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9a320d64b1ff%3A0x27cc24c891a85f50!2sBogotá!5e0!3m2!1ses-419!2sco!4v1700000000000!5m2!1ses-419!2sco"
-      width="100%" height="250" style="border: 1px;;" allowfullscreen="" loading="lazy">
-    </iframe>
-  </section>
+      <div class="mapa">
+        <h2>Nuestra Ubicación</h2>
+        <p>
+          Encuentra nuestras instalaciones en el corazón de Bogotá. Te esperamos
+          con lo mejor en entrenamiento y bienestar.
+        </p>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.7972901836043!2d-74.08057258523724!3d4.603093043408687!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f99d040622e8f%3A0x58bd234b71eac21e!2sMundimotos%20Bogot%C3%A1%20-%20Caracas!5e0!3m2!1ses!2sco!4v1689345670123!5m2!1ses!2sco"
+          width="100%"
+          height="300"
+          style="border: 0; border-radius: 10px"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        >
+        </iframe>
+      </div>
+    </section>
 
-  <!-- Redes sociales flotantes -->
-  <div class="redes-flotantes">
-    <a href="#" title="Instagram" class="instagram"><i class="fab fa-instagram"></i></a>
-    <a href="#" title="TikTok" class="tiktok"><i class="fab fa-tiktok"></i></a>
-    <a href="#" title="WhatsApp" class="whatsapp"><i class="fab fa-whatsapp"></i></a>
-    <a href="#" title="Facebook" class="facebook"><i class="fab fa-facebook"></i></a>
-  </div>
+    <!-- Redes sociales flotantes -->
+    <div class="redes-flotantes">
+      <a href="#" class="whatsapp"><i class="fab fa-whatsapp"></i></a>
+      <a href="#" class="instagram"><i class="fab fa-instagram"></i></a>
+      <a href="#" class="facebook"><i class="fab fa-facebook-f"></i></a>
+      <a href="#" class="tiktok"><i class="fab fa-tiktok"></i></a>
+      <a href="#" class="youtube"><i class="fab fa-youtube"></i></a>
+    </div>
 
-</head>
-</body>
+    <footer>
+      <p>© 2025 Spartan Studio. Todos los derechos reservados.</p>
+    </footer>
+    <script>
+      const formulario = document.getElementById("formulario-contacto");
+      const mensajeExito = document.getElementById("mensaje-exito");
+
+      formulario.addEventListener("submit", function (e) {
+        e.preventDefault(); // evita el envío real
+
+        // Aquí puedes agregar lógica real si usarás backend
+
+        // Mostrar mensaje de éxito
+        mensajeExito.style.display = "block";
+
+        // Opcional: limpiar el formulario
+        formulario.reset();
+
+        // Ocultar mensaje luego de 5 segundos
+        setTimeout(() => {
+          mensajeExito.style.display = "none";
+        }, 5000);
+      });
+    </script>
+  </body>
 </html>
