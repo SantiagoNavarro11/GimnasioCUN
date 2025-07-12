@@ -21,6 +21,10 @@ const scrollRevealOption = {
   duration: 1000,
 };
 
+// Menu
+function redirigir(ruta) {
+  window.location.href = ruta;
+};
 // Ocultar elementos antes de revelar - menu
 
 
